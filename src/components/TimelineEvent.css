@@ -17,12 +17,14 @@
 }
 
 .event-status {
-  grid-area: 2 / 1 / span 1 / -1;
-  word-break: break-all;
+  grid-area: 2 / 1 / span 1 / 1;
+  word-break: normal;
+  margin-left: 0.5rem;
 }
 
 .event-time {
   grid-area: 1 / 2 / span 1 / span 1;
   margin-top: 0.5rem;
+  margin-right: 0.5rem;
   text-align: right;
 }

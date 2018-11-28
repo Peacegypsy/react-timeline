@@ -8,17 +8,18 @@ const TimelineEvent = props => {
   const timeStamp = props.timeStamp;
   const time = Timestamp(timeStamp);
   return (
-    <section>
-      <h3>{props.name}</h3>
-      <h3>{props.status}</h3>
-      <h3>{time}</h3>
+    <section className="timeline-event">
+      <h3 className="event-person">{props.name}</h3>
+      <h3 className="event-status">{props.status}</h3>
+      <h3 className="event-time">{time}</h3>
     </section>
   );
 };
 TimelineEvent.propTypes = {
-  person: PropTypes.string,
+  name: PropTypes.string,
   status: PropTypes.string,
-  timeline: PropTypes.string
+  timeline: PropTypes.string,
+  timeStamp: PropTypes.string
 };
 
 export default TimelineEvent;
